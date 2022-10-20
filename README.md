@@ -7,8 +7,8 @@ is present, it is checking that Is substring of a string available as a string i
 vector of strings or not? If the selected string is compound string then store it in 
 variable and after sorting in descending order according to their length, first two strings are the answer. 
 ‘contains’ function have time complexity O(K) , ‘Check’ function have time 
-complexity O(K^2) and ‘solve‘ function have time complexity = O(N*K) + O(K^2) + 
-O(N*K^2)(Time complexity of for loop in solve function where one by one strings are passing in check function) + O(NLogN)(time complexity of sort function). 
+complexity O(K^2) and ‘solve‘ function have time complexity = O(NK) + O(K^2) + 
+O(NK^2)(Time complexity of for loop in solve function where one by one strings are passing in check function) + O(NLogN)(time complexity of sort function). 
 In Both Test Cases Length of word is very less than the maximum length of list of 
 words (100,000+). So K is a Constant then Time Complexity of whole code is
-O(N*LogN)
+O(NLogN)
