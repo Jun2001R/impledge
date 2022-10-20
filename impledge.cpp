@@ -81,9 +81,9 @@ int32_t main()
     //for taking fast input output
 	ios_base::sync_with_stdio(false);
 	int n;
-    cout << "input length of string" << endl;
+    cout << "input number of strings" << endl;
     cin>>n;
-	cout << "input Whole string" << endl;
+	cout << "input all strings" << endl;
 	string s;
 	vector<string> v;
 //we are taking all inputs here
