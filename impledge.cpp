@@ -22,7 +22,7 @@ bool contains(string s,TrieNode * root)
 	}
 	return root->isEnd;
 }
-//if substrings are present in the input or not
+// iterating on every string and checking is the word compound or not?
 bool check(int i,string s,int cnt,TrieNode * root)
 {
 	if(i==s.size())
@@ -68,10 +68,15 @@ void solve(vector<string>&v)
 		if(check(0,a,0,root))
 		ans.push_back(a);
 	}
-	
-	sort(ans.begin(),ans.end(),comp);
-    cout << "Your answer" << endl;
-    cout<<ans[0]<<endl<<ans[1]<<endl;
+	if(ans.size()==0)
+		cout << "not found any compound word";
+	else if(ans.size()==1)
+		cout <<"Longest Compound Word : " <<ans[0] << endl;
+		else {
+			sort(ans.begin(), ans.end(), comp);
+			cout <<"Longest Compound Word : "<<ans[0] << endl << "Second Longest Compound Word : "<<ans[1] << endl;
+		}
+
 		
 	return;	
 }
